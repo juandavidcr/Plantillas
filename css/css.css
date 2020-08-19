@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    background: url('../images/backgroung-page.png') repeat-x;
+}
+
+.contenedor-menu ul{
+    margin: 0px;
+    padding: 0px;
+}
+.contenedor-menu li{
+    list-style: none;
+    cursor: pointer;
+    padding: 5px 18px 10px 20px;
+    color: #5CD2ED;
+/*    background-color: #004565;*/
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+}
+.contenedor-menu li:hover{
+    color: #004565;
+    background-color: #ffffff;
+}
+.contenedor-menu ul li{
+    float: left;
+}
+.contenedor-menu ul li ul{
+    position: absolute;    
+    display: none;
+    padding: 10px 0;
+    margin: 6px -20px;        
+    z-index: 7;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 1px 1px 3px #004565;
+    -webkit-box-shadow: 1px 1px 3px #004565;
+    box-shadow: 1px 1px 3px #004565;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Shadow(strength = 1, Direction = 135, Color = '#004565')";
+    opacity: 0.74;
+    /*
+    filter: progid: DXImageTransform.Microsoft.Shadow(strength = 1, direction = 135, color = '#004565');
+    -ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity = 74);
+    */
+    filter: alpha(opacity = 74);    
+}
+.contenedor-menu ul li:hover ul {
+    display: block;
+    color: #ffffff;
+    background-color: #004565;
+
+}
+.contenedor-menu ul li ul li{
+    float: none;    
+}
+
+#contenedor{
+    width: 980px;
+    margin: 0px auto;
+}
